@@ -1,10 +1,11 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
+import React from 'react';
+import './index.css';
 
-function Card() {
+function Card({ nombre, apellido }) {
   return (
-    <div>
-      <h2>Esto es un componente</h2>
+       <div className="card">
+      <h2>Nombre de Jugador: {nombre}</h2>
+      <h2>Servidor elegido: {apellido}</h2>
     </div>
   );
 }
